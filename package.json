@@ -1,0 +1,25 @@
+{
+  "name": "code-sniper",
+  "publisher": "digipodium",
+  "displayName": "code-sniper",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
