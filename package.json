@@ -2,9 +2,10 @@
   "name": "code-sniper",
   "publisher": "digipodium",
   "displayName": "code-sniper",
+  "icon": "./images/ext_logo.png",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/m-triple-m/code-sniper-extension"
   },
   "description": "",
   "version": "0.0.1",
