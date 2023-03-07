@@ -12,13 +12,131 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"CreateModel": {
+	"Welcome To Digipodium": {
 		"prefix": [
-			"?"
+			"digipod"
 		],
 		"body": [
-			"console.log(`Now that's something awesome!`)"
+			"Welcome to Digipodium!!👍"
 		],
-		"description": "⚠ Use at your own risk!! ⚠"
-	}
+		"description": "Extension developed for Digipods"
+	},
+	// -------------- React Snippets ----------------
+	"React Component": {
+		"prefix": [
+			"dp-crc"
+		],
+		"body": [
+			"import React from 'react'",
+			"",
+			"const ${1:ComponentName} = () => {",
+			"    return (",
+			"      <div>",
+			"        <h1>${1:ComponentName} Component</h1>",
+			"      </div>",
+			"    );",
+			"  }",
+			"",
+			"export default ${1:ComponentName};"
+		],
+		"description": "React Component"
+	},
+	"React Navbar Component - BootstrapCSS": {
+		"prefix": [
+			"dp-cncbt"
+		],
+		"body": [
+			"import React from 'react';",
+			"import { Link, NavLink } from 'react-router-dom';",
+			"",
+			"const Navbar = () => {",
+			"  return (",
+			"    <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>",
+			"      {/* Container wrapper */}",
+			"      <div className='container'>",
+			"        {/* Toggle button */}",
+			"        <button",
+			"          className='navbar-toggler'",
+			"          type='button'",
+			"          data-mdb-toggle='collapse'",
+			"          data-mdb-target='#navbarSupportedContent'",
+			"          aria-controls='navbarSupportedContent'",
+			"          aria-expanded='false'",
+			"          aria-label='Toggle navigation'",
+			"        >",
+			"          <i className='fas fa-bars' />",
+			"        </button>",
+			"        {/* Collapsible wrapper */}",
+			"        <div className='collapse navbar-collapse' id='navbarSupportedContent'>",
+			"          {/* Navbar brand */}",
+			"          <NavLink className='navbar-brand mt-2 mt-lg-0' href='#'>",
+			"            <img",
+			"              src='https://raw.githubusercontent.com/digipodium/Email-Templates/master/Images/logo.png'",
+			"              height={50}",
+			"              alt='MDB Logo'",
+			"              loading='lazy'",
+			"            />",
+			"          </NavLink>",
+			"          {/* Left links */}",
+			"          <ul className='navbar-nav me-auto mb-2 mb-lg-0'>",
+			"            <li className='nav-item'>",
+			"              <NavLink className='nav-link' to='/main/home'>",
+			"                Home",
+			"              </NavLink>",
+			"            </li>",
+			"            <li className='nav-item'>",
+			"              <NavLink className='nav-link' to='/main/aboutus'>",
+			"                AboutUs",
+			"              </NavLink>",
+			"            </li>",
+			"            <li className='nav-item'>",
+			"              <NavLink className='nav-link' to='/main/contact'>",
+			"                Contact",
+			"              </NavLink>",
+			"            </li>",
+			"          </ul>",
+			"          <ul className='navbar-nav mb-2 mb-lg-0'>",
+			"            <li className='nav-item me-2'>",
+			"              <Link className='btn btn-outline-white' to='/main/signup'>",
+			"                Create Account",
+			"              </Link>",
+			"            </li>",
+			"            <li className='nav-item'>",
+			"              <Link className='btn btn-outline-white' to='/main/signin'>",
+			"                Signin",
+			"              </Link>",
+			"            </li>",
+			"          </ul>",
+			"        </div>",
+			"      </div>",
+			"      {/* Container wrapper */}",
+			"    </nav>",
+			"  );",
+			"};",
+			"",
+			"export default Navbar;"
+		],
+		"description": "React Navbar Component - BootstrapCSS"
+	},
+	// React Native Snippets
+	"React Native Component": {
+		"prefix": [
+			"dp-crn"
+		],
+		"body": [
+			"import React from 'react';",
+			"import { View, Text } from 'react-native';",
+			"",
+			"const ${1:ComponentName} = () => {",
+			"    return (",
+			"      <View>",
+			"        <Text>${1:ComponentName} Screen</Text>",
+			"      </View>",
+			"    );",
+			"  }",
+			"",
+			"export default ${1:ComponentName};"
+		],
+		"description": "React Native Component"
+	},
 }
